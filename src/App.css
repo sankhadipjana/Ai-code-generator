@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding:0;
+}
+
+/* body{
+background-image: url("img123.jpg");
+color: white;
+  
+} */
+
+html{
+  overflow-x: hidden;
+}
+.logo{
+  font-size: 2rem;
+  display: flex;
+  margin-top: 15px;
+  margin-left: 40px;
+  color: aqua;
+}
+.bd{
+  border-radius: 50px;
+}
+.left{
+  border-radius: 8px;
+}
+
+@keyframes animate-ani{
+  to {
+    background-position: 200%;
+  }
+}
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Basic Pulsing Glow */
+.glow-basic {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #010935;
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #0ff,
+        0 0 35px #0ff,
+        0 0 40px #0ff,
+        0 0 50px #0ff;
+    animation: glow-basic 2s ease-in-out infinite alternate;
+}
+
+/* Neon Sign Effect */
+.glow-neon {
+    font-size: 3.4rem;
+    margin-left: 20px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #00fffb, #00d5ff, #000289, #001342, #00ffd5, #002bff, #00d5ff, #080023, #ff0000);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 10px currentColor);
+    animation: rainbow-glow 15s ease-in-out infinite;
+}
+
+@keyframes rainbow-glow {
+    0% {
+        background-position: 0% 50%;
+        filter: drop-shadow(0 0 5px currentColor);
+    }
+    50% {
+        background-position: 100% 50%;
+        filter: drop-shadow(0 0 20px currentColor) drop-shadow(0 0 30px currentColor);
+    }
+    100% {
+        background-position: 0% 50%;
+        filter: drop-shadow(0 0 5px currentColor);
+    }
+}
+
+.bloor{
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 0.5clspx solid white;
+}
+.generate{
+  margin-left: 80%;
+  margin-top: 20px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #010935;
+    filter: drop-shadow(0 0 10px currentColor);
+    animation: rainbow-glow 15s ease-in-out infinite;
+    color: rgb(0, 229, 255);
+
+}
+
+.round{
+  background: #010935;
+  animation: rainbow-glow 15s ease-in-out infinite;  /* slowlly gloing effect  */
+  color: rgb(0, 229, 255);
+
+  
+}
+.code_editor{
+     font-weight: bold;
+    color: #010935;
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #0ff,
+        0 0 35px #0ff,
+        0 0 40px #0ff,
+        0 0 50px #0ff;
+    animation: glow-basic 2s ease-in-out infinite alternate;
+}
+
