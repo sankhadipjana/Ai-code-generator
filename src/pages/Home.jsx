@@ -17,7 +17,7 @@ import { IoCloseSharp, IoCopy } from "react-icons/io5";
 const Home = () => {
   const options = [
     { value: "HTML-CSS", label: "HTML + CSS" },
-    { value: "HTML-Tailwent", label: "HTML + TailwentCSS" },
+    { value: "HTML-Tailwent-js", label: "HTML + TailwentCSS+js" },
     { value: "HTML-Bootstrap", label: "HTML + Bootstrap" },
     { value: "HTML-CSS-js", label: "HTML + CSS + js" },
     { value: "HTML-Tailwent-Bootstrap", label: "HTML + Tailwent + Bootstrap" },
@@ -165,7 +165,7 @@ Requirements:
             }}
           />
             {/* describe your component here  */}
-          <p className="text-white mt-10 mb-3 text-3xl">
+          <p className="text-white mt-10 mb-3 text-2xl">
             describe your component
           </p>
           {/* choose one framework  */}
@@ -175,7 +175,7 @@ Requirements:
             }}
             
             value={prompt}
-            className="bloor rounded-xl w-full min-h-[450px] p-[20px] text-[20px] "
+            className="bloor rounded-xl w-full min-h-[400px] p-[20px] text-[20px] "
             placeholder="Describe your component and let Ai will code for you.." //place hlder
           ></textarea>
           <button
